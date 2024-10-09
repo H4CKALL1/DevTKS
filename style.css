@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    background-color: rgba(34, 34, 34, 0.1); /* Transparent background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0px); /* Adds a blur effect */
+}
+
+.title {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.timer-container {
+    margin-bottom: 30px;
+}
+
+.timer-frame {
+    background-color: rgba(247, 238, 223, 0.4); /* Semi-transparent */
+    padding: 15px;
+    border: 3px solid rgba(191, 162, 127, 0.7);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.timer-frame p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.grid-item {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid rgba(196, 196, 196, 0.6); /* Transparent border */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent */
+}
+
+.header {
+    background-color: rgba(234, 234, 234, 0.3); /* Semi-transparent header */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result {
+    color: #a457e1;
+    font-size: 24px;
+}
+
+.telegram-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(27, 149, 224, 0.8); /* Semi-transparent button */
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.telegram-btn:hover {
+    background-color: rgba(0, 122, 204, 0.8);
+}
